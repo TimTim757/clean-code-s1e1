@@ -4,21 +4,21 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.header-image-container {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.header-image-container img {
     width: 100%;
 }
-.aaa .more-inf {
+.header-image-container .more-inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.header-image-container { text-align: center;
 }
 }
 .centered-main-page-element {
@@ -58,7 +58,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for="new-task-input"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -84,11 +84,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="new-task-input"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+input#new-task-input {
     width: 318px;
 }
 
