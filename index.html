@@ -6,45 +6,51 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="header-image-container"><img src="./eisenhower-matrix.jpg">
+    <header class="header-image-container"><img src="./eisenhower-matrix.jpg">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="centered">
-      <p id="add-todo-form">
-        <label for="new-task-input common-label">Add Item</label>
-        <div class="task-wrapper">
-          <input id="new-task-input" class="task none-outline" type="text">
-          <button class="none-outline" id="common-buutton">Add</button>
+    </header>
+    <main class="centered">
+      <section class="task-creation">
+        <div id="add-todo-form">
+          <label for="new-task-input common-label">Add Item</label>
+          <div class="task-wrapper">
+            <input id="new-task-input" class="task none-outline" type="text">
+            <button class="none-outline" id="common-buutton">Add</button>
+          </div>
         </div>
-      </p>
-      <h3 class="no-list-style common-label">Todo</h3>
-      <ul class="common-list" id="incomplete">
-        <li class="no-list-style">
-          <input class="none-outline" type="checkbox">
-          <label class="task common-label">Pay Bills</label>
-          <input class="none-outline" type="text" class="task none-outline">
-          <button class="edit none-outline" id="common-buutton">Edit</button>
-          <button class="delete none-outline" id="common-buutton"><img src="./remove.svg"></button>
-        </li>
-        <li class="edit-mode no-list-style">
-          <input type="checkbox" class="none-outline">
-          <label class="task common-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task none-outline">
-          <button class="edit none-outline" id="common-buutton">Save</button>
-          <button class="delete none-outline" id="common-buutton"><img src="./remove.svg"></button>
-         </li>
-      </ul>
-      <h3 class="no-list-style common-label">Completed</h3>
-      <ul class="common-list" id="completed">
-        <li class="no-list-style">
-          <input class="none-outline" type="checkbox" checked>
-          <label class="task common-label">See the Doctor</label>
-          <input type="text" class="task none-outline">
-          <button class="edit none-outline" id="common-buutton">Edit</button>
-          <button class="delete none-outline" id="common-buutton"><img src="./remove.svg"></button>
-        </li>
-      </ul>
-    </div>
+      </section>
+      <section class="current-task-manage">
+        <h3 class="no-list-style common-label">Todo</h3>
+        <ul class="common-list" id="incomplete">
+          <li class="no-list-style">
+            <input class="none-outline" type="checkbox">
+            <label class="task common-label">Pay Bills</label>
+            <input class="none-outline" type="text" class="task none-outline">
+            <button class="edit none-outline" id="common-buutton">Edit</button>
+            <button class="delete none-outline" id="common-buutton"><img src="./remove.svg"></button>
+          </li>
+          <li class="edit-mode no-list-style">
+            <input type="checkbox" class="none-outline">
+            <label class="task common-label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task none-outline">
+            <button class="edit none-outline" id="common-buutton">Save</button>
+            <button class="delete none-outline" id="common-buutton"><img src="./remove.svg"></button>
+           </li>
+        </ul>
+      </section>
+      <section class="done-task-manage">
+        <h3 class="no-list-style common-label">Completed</h3>
+        <ul class="common-list" id="completed">
+          <li class="no-list-style">
+            <input class="none-outline" type="checkbox" checked>
+            <label class="task common-label">See the Doctor</label>
+            <input type="text" class="task none-outline">
+            <button class="edit none-outline" id="common-buutton">Edit</button>
+            <button class="delete none-outline" id="common-buutton"><img src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
