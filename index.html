@@ -1,52 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <meta charset="utf-8">
   </head>
   <body>
-    <header class="header-image-container"><img src="./eisenhower-matrix.jpg" alt="eisenhower">
-      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <header class="header"><img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower">
+      <a class="header__inner more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="centered">
-      <section class="task-creation">
-        <div id="add-todo-form">
-          <label for="new-task-input common-label">Add Item</label>
-          <div class="task-wrapper">
-            <input id="new-task-input" class="task none-outline" type="text">
-            <button class="none-outline" id="common-buutton">Add</button>
-          </div>
+      <div class="centered__inner" id="add-todo-form">
+        <label class="add-todo-form__inner" for="new-task-input">Add Item</label>
+        <div class="add-todo-form__inner task-wrapper">
+          <input id="new-task-input" class="task-wrapper__inner task none-outline" type="text">
+          <button class="task-wrapper__inner none-outline common-buutton">Add</button>
         </div>
-      </section>
-      <section class="current-task-manage">
-        <h3 class="no-list-style common-label">Todo</h3>
-        <ul class="common-list" id="incomplete">
-          <li class="no-list-style">
-            <input class="none-outline" type="checkbox">
-            <label class="task common-label">Pay Bills</label>
-            <input class="none-outline" type="text" class="task none-outline">
-            <button class="edit none-outline" id="common-buutton">Edit</button>
-            <button class="delete none-outline" id="common-buutton"><img src="./remove.svg" alt="remove"></button>
+      </div>
+      <section class="centered__inner current-task-manage">
+        <h3 class="current-task-manage__inner no-list-style common-label">Todo</h3>
+        <ul class="current-task-manage__inner common-list" id="incomplete">
+          <li class="common-list__inner no-list-style">
+            <input class="no-list-style__inner none-outline" type="checkbox">
+            <label class="no-list-style__inner task common-label">Pay Bills</label>
+            <input class="no-list-style__inner task none-outline" type="text">
+            <button class="no-list-style__inner edit none-outline common-buutton">Edit</button>
+            <button class="no-list-style__inner delete none-outline common-buutton"><img src="./remove.svg" alt="remove"></button>
           </li>
-          <li class="edit-mode no-list-style">
-            <input type="checkbox" class="none-outline">
-            <label class="task common-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task none-outline">
-            <button class="edit none-outline" id="common-buutton">Save</button>
-            <button class="delete none-outline" id="common-buutton"><img src="./remove.svg"></button>
+          <li class="common-list__inner edit-mode no-list-style">
+            <input type="checkbox" class="edit-mode__inner none-outline">
+            <label class="edit-mode__inner task common-label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="edit-mode__inner task none-outline">
+            <button class="edit-mode__inner edit none-outline common-buutton">Save</button>
+            <button class="edit-mode__inner delete none-outline common-buutton"><img src="./remove.svg" alt="remove"></button>
            </li>
         </ul>
       </section>
-      <section class="done-task-manage">
-        <h3 class="no-list-style common-label">Completed</h3>
-        <ul class="common-list" id="completed">
-          <li class="no-list-style">
-            <input class="none-outline" type="checkbox" checked>
-            <label class="task common-label">See the Doctor</label>
-            <input type="text" class="task none-outline">
-            <button class="edit none-outline" id="common-buutton">Edit</button>
-            <button class="delete none-outline" id="common-buutton"><img src="./remove.svg" alt="remove"></button>
+      <section class="centered__inner done-task-manage">
+        <h3 class="done-task-manage__inner no-list-style common-label">Completed</h3>
+        <ul class="done-task-manage__inner common-list" id="completed">
+          <li class="common-list__inner done no-list-style">
+            <input class="done__inner none-outline" type="checkbox" checked>
+            <label class="done__inner task common-label">See the Doctor</label>
+            <input type="text" class="done__inner task none-outline">
+            <button class="done__inner edit none-outline common-buutton">Edit</button>
+            <button class="done__inner delete none-outline common-buutton"><img src="./remove.svg" alt="remove"></button>
           </li>
         </ul>
       </section>
